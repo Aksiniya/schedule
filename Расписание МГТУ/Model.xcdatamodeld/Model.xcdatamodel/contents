@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15D21" minimumToolsVersion="Xcode 7.0">
+    <entity name="Settings" representedClassName=".Settings" syncable="YES">
+        <attribute name="firstDayOfEducation" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="Subject" representedClassName="Subject" syncable="YES">
+        <attribute name="day" attributeType="String" syncable="YES"/>
+        <attribute name="specification" attributeType="String" syncable="YES"/>
+        <attribute name="subjectName" attributeType="String" syncable="YES"/>
+        <attribute name="timeAt" attributeType="String" syncable="YES"/>
+        <attribute name="timeTo" attributeType="String" syncable="YES"/>
+        <attribute name="week" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="ToDo" representedClassName=".ToDo" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Settings" positionX="-234" positionY="27" width="128" height="60"/>
+        <element name="Subject" positionX="-81" positionY="-54" width="164" height="133"/>
+        <element name="ToDo" positionX="-234" positionY="-54" width="128" height="60"/>
+    </elements>
+</model>
