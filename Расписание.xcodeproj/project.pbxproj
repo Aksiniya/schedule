@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA141CA01FEF00C000A6AF81 /* Subject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA141C9A1FEF00C000A6AF81 /* Subject+CoreDataProperties.swift */; };
+		FA141CA11FEF00C000A6AF81 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA141C9B1FEF00C000A6AF81 /* Subject.swift */; };
+		FA141CA21FEF00C000A6AF81 /* ToDo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA141C9C1FEF00C000A6AF81 /* ToDo+CoreDataProperties.swift */; };
+		FA141CA31FEF00C000A6AF81 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA141C9D1FEF00C000A6AF81 /* ToDo.swift */; };
+		FA141CA41FEF00C000A6AF81 /* Settings+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA141C9E1FEF00C000A6AF81 /* Settings+CoreDataProperties.swift */; };
+		FA141CA51FEF00C000A6AF81 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA141C9F1FEF00C000A6AF81 /* Settings.swift */; };
+		FA155BF91FDEA42C00A5D1CC /* ToDoListTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA155BF81FDEA42C00A5D1CC /* ToDoListTableController.swift */; };
+		FA4645641FEAA4F200FC2162 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA4645621FEAA4F200FC2162 /* Model.xcdatamodeld */; };
+		FA4645721FEAAC7800FC2162 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4645711FEAAC7800FC2162 /* CoreDataHelper.swift */; };
+		FA75D50A1FE788C0006D5ECA /* SubjectInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA75D5091FE788C0006D5ECA /* SubjectInfoView.swift */; };
+		FAC889D41FC87B74009DBDC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC889D31FC87B74009DBDC1 /* AppDelegate.swift */; };
+		FAC889DB1FC87B74009DBDC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC889D91FC87B74009DBDC1 /* Main.storyboard */; };
+		FAC889DD1FC87B74009DBDC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC889DC1FC87B74009DBDC1 /* Assets.xcassets */; };
+		FAC889E01FC87B74009DBDC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC889DE1FC87B74009DBDC1 /* LaunchScreen.storyboard */; };
+		FAC889EB1FC87B74009DBDC1 /* _______________Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC889EA1FC87B74009DBDC1 /* _______________Tests.swift */; };
+		FAC889F61FC87B74009DBDC1 /* _______________UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC889F51FC87B74009DBDC1 /* _______________UITests.swift */; };
+		FAC88A061FC88BD7009DBDC1 /* NumeratorTimeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC88A051FC88BD7009DBDC1 /* NumeratorTimeTableController.swift */; };
+		FAC88A081FC88C0D009DBDC1 /* Denominator Denominator Denominator Denominator Denominator Denominator DenominatorTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC88A071FC88C0D009DBDC1 /* Denominator Denominator Denominator Denominator Denominator Denominator DenominatorTimeTableViewController.swift */; };
+		FAC88A0A1FC8B5D6009DBDC1 /* AddNumeratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC88A091FC8B5D6009DBDC1 /* AddNumeratorViewController.swift */; };
+		FAC88A0C1FC8B5F0009DBDC1 /* AddDenominatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC88A0B1FC8B5F0009DBDC1 /* AddDenominatorViewController.swift */; };
+		FAC88A101FCB627D009DBDC1 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC88A0F1FCB627D009DBDC1 /* SampleData.swift */; };
+		FAC88A121FCB6CD7009DBDC1 /* SubjectTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC88A111FCB6CD7009DBDC1 /* SubjectTableCell.swift */; };
+		FAFA4A111FED6CC000BB5232 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA4A101FED6CC000BB5232 /* DatePickerDialog.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAC889E71FC87B74009DBDC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAC889C81FC87B74009DBDC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAC889CF1FC87B74009DBDC1;
+			remoteInfo = "Расписание МГТУ";
+		};
+		FAC889F21FC87B74009DBDC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAC889C81FC87B74009DBDC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAC889CF1FC87B74009DBDC1;
+			remoteInfo = "Расписание МГТУ";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA141C9A1FEF00C000A6AF81 /* Subject+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Subject+CoreDataProperties.swift"; path = "CoreData files/Subject+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FA141C9B1FEF00C000A6AF81 /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Subject.swift; path = "CoreData files/Subject.swift"; sourceTree = "<group>"; };
+		FA141C9C1FEF00C000A6AF81 /* ToDo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ToDo+CoreDataProperties.swift"; path = "CoreData files/ToDo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FA141C9D1FEF00C000A6AF81 /* ToDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDo.swift; path = "CoreData files/ToDo.swift"; sourceTree = "<group>"; };
+		FA141C9E1FEF00C000A6AF81 /* Settings+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Settings+CoreDataProperties.swift"; path = "CoreData files/Settings+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FA141C9F1FEF00C000A6AF81 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Settings.swift; path = "CoreData files/Settings.swift"; sourceTree = "<group>"; };
+		FA155BF81FDEA42C00A5D1CC /* ToDoListTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListTableController.swift; sourceTree = "<group>"; };
+		FA4645631FEAA4F200FC2162 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		FA4645711FEAAC7800FC2162 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		FA75D5091FE788C0006D5ECA /* SubjectInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectInfoView.swift; sourceTree = "<group>"; };
+		FAC889D01FC87B74009DBDC1 /* Расписание МГТУ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Расписание МГТУ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC889D31FC87B74009DBDC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAC889DA1FC87B74009DBDC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAC889DC1FC87B74009DBDC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAC889DF1FC87B74009DBDC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAC889E11FC87B74009DBDC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC889E61FC87B74009DBDC1 /* Расписание МГТУTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Расписание МГТУTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC889EA1FC87B74009DBDC1 /* _______________Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_______________Tests.swift"; sourceTree = "<group>"; };
+		FAC889EC1FC87B74009DBDC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC889F11FC87B74009DBDC1 /* Расписание МГТУUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Расписание МГТУUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC889F51FC87B74009DBDC1 /* _______________UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_______________UITests.swift"; sourceTree = "<group>"; };
+		FAC889F71FC87B74009DBDC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC88A051FC88BD7009DBDC1 /* NumeratorTimeTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumeratorTimeTableController.swift; sourceTree = "<group>"; };
+		FAC88A071FC88C0D009DBDC1 /* Denominator Denominator Denominator Denominator Denominator Denominator DenominatorTimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Denominator Denominator Denominator Denominator Denominator Denominator DenominatorTimeTableViewController.swift"; sourceTree = "<group>"; };
+		FAC88A091FC8B5D6009DBDC1 /* AddNumeratorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNumeratorViewController.swift; sourceTree = "<group>"; };
+		FAC88A0B1FC8B5F0009DBDC1 /* AddDenominatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDenominatorViewController.swift; sourceTree = "<group>"; };
+		FAC88A0F1FCB627D009DBDC1 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		FAC88A111FCB6CD7009DBDC1 /* SubjectTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectTableCell.swift; sourceTree = "<group>"; };
+		FAFA4A101FED6CC000BB5232 /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAC889CD1FC87B74009DBDC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC889E31FC87B74009DBDC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC889EE1FC87B74009DBDC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAC889C71FC87B74009DBDC1 = {
+			isa = PBXGroup;
+			children = (
+				FA141C9A1FEF00C000A6AF81 /* Subject+CoreDataProperties.swift */,
+				FA141C9B1FEF00C000A6AF81 /* Subject.swift */,
+				FA141C9C1FEF00C000A6AF81 /* ToDo+CoreDataProperties.swift */,
+				FA141C9D1FEF00C000A6AF81 /* ToDo.swift */,
+				FA141C9E1FEF00C000A6AF81 /* Settings+CoreDataProperties.swift */,
+				FA141C9F1FEF00C000A6AF81 /* Settings.swift */,
+				FAC889D21FC87B74009DBDC1 /* Расписание МГТУ */,
+				FAC889E91FC87B74009DBDC1 /* Расписание МГТУTests */,
+				FAC889F41FC87B74009DBDC1 /* Расписание МГТУUITests */,
+				FAC889D11FC87B74009DBDC1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAC889D11FC87B74009DBDC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAC889D01FC87B74009DBDC1 /* Расписание МГТУ.app */,
+				FAC889E61FC87B74009DBDC1 /* Расписание МГТУTests.xctest */,
+				FAC889F11FC87B74009DBDC1 /* Расписание МГТУUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAC889D21FC87B74009DBDC1 /* Расписание МГТУ */ = {
+			isa = PBXGroup;
+			children = (
+				FA4645621FEAA4F200FC2162 /* Model.xcdatamodeld */,
+				FA4645711FEAAC7800FC2162 /* CoreDataHelper.swift */,
+				FAC889D31FC87B74009DBDC1 /* AppDelegate.swift */,
+				FAC889D91FC87B74009DBDC1 /* Main.storyboard */,
+				FA75D5091FE788C0006D5ECA /* SubjectInfoView.swift */,
+				FAC88A051FC88BD7009DBDC1 /* NumeratorTimeTableController.swift */,
+				FAC88A071FC88C0D009DBDC1 /* Denominator Denominator Denominator Denominator Denominator Denominator DenominatorTimeTableViewController.swift */,
+				FAC88A0F1FCB627D009DBDC1 /* SampleData.swift */,
+				FAC88A111FCB6CD7009DBDC1 /* SubjectTableCell.swift */,
+				FAC88A091FC8B5D6009DBDC1 /* AddNumeratorViewController.swift */,
+				FAC88A0B1FC8B5F0009DBDC1 /* AddDenominatorViewController.swift */,
+				FAC889DC1FC87B74009DBDC1 /* Assets.xcassets */,
+				FAC889DE1FC87B74009DBDC1 /* LaunchScreen.storyboard */,
+				FAC889E11FC87B74009DBDC1 /* Info.plist */,
+				FA155BF81FDEA42C00A5D1CC /* ToDoListTableController.swift */,
+				FAFA4A101FED6CC000BB5232 /* DatePickerDialog.swift */,
+			);
+			path = "Расписание МГТУ";
+			sourceTree = "<group>";
+		};
+		FAC889E91FC87B74009DBDC1 /* Расписание МГТУTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAC889EA1FC87B74009DBDC1 /* _______________Tests.swift */,
+				FAC889EC1FC87B74009DBDC1 /* Info.plist */,
+			);
+			path = "Расписание МГТУTests";
+			sourceTree = "<group>";
+		};
+		FAC889F41FC87B74009DBDC1 /* Расписание МГТУUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAC889F51FC87B74009DBDC1 /* _______________UITests.swift */,
+				FAC889F71FC87B74009DBDC1 /* Info.plist */,
+			);
+			path = "Расписание МГТУUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAC889CF1FC87B74009DBDC1 /* Расписание МГТУ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC889FA1FC87B74009DBDC1 /* Build configuration list for PBXNativeTarget "Расписание МГТУ" */;
+			buildPhases = (
+				FAC889CC1FC87B74009DBDC1 /* Sources */,
+				FAC889CD1FC87B74009DBDC1 /* Frameworks */,
+				FAC889CE1FC87B74009DBDC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Расписание МГТУ";
+			productName = "Расписание МГТУ";
+			productReference = FAC889D01FC87B74009DBDC1 /* Расписание МГТУ.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAC889E51FC87B74009DBDC1 /* Расписание МГТУTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC889FD1FC87B74009DBDC1 /* Build configuration list for PBXNativeTarget "Расписание МГТУTests" */;
+			buildPhases = (
+				FAC889E21FC87B74009DBDC1 /* Sources */,
+				FAC889E31FC87B74009DBDC1 /* Frameworks */,
+				FAC889E41FC87B74009DBDC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAC889E81FC87B74009DBDC1 /* PBXTargetDependency */,
+			);
+			name = "Расписание МГТУTests";
+			productName = "Расписание МГТУTests";
+			productReference = FAC889E61FC87B74009DBDC1 /* Расписание МГТУTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAC889F01FC87B74009DBDC1 /* Расписание МГТУUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC88A001FC87B74009DBDC1 /* Build configuration list for PBXNativeTarget "Расписание МГТУUITests" */;
+			buildPhases = (
+				FAC889ED1FC87B74009DBDC1 /* Sources */,
+				FAC889EE1FC87B74009DBDC1 /* Frameworks */,
+				FAC889EF1FC87B74009DBDC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAC889F31FC87B74009DBDC1 /* PBXTargetDependency */,
+			);
+			name = "Расписание МГТУUITests";
+			productName = "Расписание МГТУUITests";
+			productReference = FAC889F11FC87B74009DBDC1 /* Расписание МГТУUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAC889C81FC87B74009DBDC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = macbook;
+				TargetAttributes = {
+					FAC889CF1FC87B74009DBDC1 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					FAC889E51FC87B74009DBDC1 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = FAC889CF1FC87B74009DBDC1;
+					};
+					FAC889F01FC87B74009DBDC1 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = FAC889CF1FC87B74009DBDC1;
+					};
+				};
+			};
+			buildConfigurationList = FAC889CB1FC87B74009DBDC1 /* Build configuration list for PBXProject "Расписание" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAC889C71FC87B74009DBDC1;
+			productRefGroup = FAC889D11FC87B74009DBDC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAC889CF1FC87B74009DBDC1 /* Расписание МГТУ */,
+				FAC889E51FC87B74009DBDC1 /* Расписание МГТУTests */,
+				FAC889F01FC87B74009DBDC1 /* Расписание МГТУUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAC889CE1FC87B74009DBDC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC889E01FC87B74009DBDC1 /* LaunchScreen.storyboard in Resources */,
+				FAC889DD1FC87B74009DBDC1 /* Assets.xcassets in Resources */,
+				FAC889DB1FC87B74009DBDC1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC889E41FC87B74009DBDC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC889EF1FC87B74009DBDC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAC889CC1FC87B74009DBDC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC88A121FCB6CD7009DBDC1 /* SubjectTableCell.swift in Sources */,
+				FAC88A0C1FC8B5F0009DBDC1 /* AddDenominatorViewController.swift in Sources */,
+				FA141CA11FEF00C000A6AF81 /* Subject.swift in Sources */,
+				FA141CA21FEF00C000A6AF81 /* ToDo+CoreDataProperties.swift in Sources */,
+				FAC88A0A1FC8B5D6009DBDC1 /* AddNumeratorViewController.swift in Sources */,
+				FA155BF91FDEA42C00A5D1CC /* ToDoListTableController.swift in Sources */,
+				FA141CA51FEF00C000A6AF81 /* Settings.swift in Sources */,
+				FAC88A061FC88BD7009DBDC1 /* NumeratorTimeTableController.swift in Sources */,
+				FAC889D41FC87B74009DBDC1 /* AppDelegate.swift in Sources */,
+				FAFA4A111FED6CC000BB5232 /* DatePickerDialog.swift in Sources */,
+				FAC88A081FC88C0D009DBDC1 /* Denominator Denominator Denominator Denominator Denominator Denominator DenominatorTimeTableViewController.swift in Sources */,
+				FA4645721FEAAC7800FC2162 /* CoreDataHelper.swift in Sources */,
+				FA141CA31FEF00C000A6AF81 /* ToDo.swift in Sources */,
+				FA75D50A1FE788C0006D5ECA /* SubjectInfoView.swift in Sources */,
+				FAC88A101FCB627D009DBDC1 /* SampleData.swift in Sources */,
+				FA4645641FEAA4F200FC2162 /* Model.xcdatamodeld in Sources */,
+				FA141CA41FEF00C000A6AF81 /* Settings+CoreDataProperties.swift in Sources */,
+				FA141CA01FEF00C000A6AF81 /* Subject+CoreDataProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC889E21FC87B74009DBDC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC889EB1FC87B74009DBDC1 /* _______________Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC889ED1FC87B74009DBDC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC889F61FC87B74009DBDC1 /* _______________UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAC889E81FC87B74009DBDC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAC889CF1FC87B74009DBDC1 /* Расписание МГТУ */;
+			targetProxy = FAC889E71FC87B74009DBDC1 /* PBXContainerItemProxy */;
+		};
+		FAC889F31FC87B74009DBDC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAC889CF1FC87B74009DBDC1 /* Расписание МГТУ */;
+			targetProxy = FAC889F21FC87B74009DBDC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAC889D91FC87B74009DBDC1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAC889DA1FC87B74009DBDC1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAC889DE1FC87B74009DBDC1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAC889DF1FC87B74009DBDC1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAC889F81FC87B74009DBDC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAC889F91FC87B74009DBDC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAC889FB1FC87B74009DBDC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Расписание МГТУ/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "oby4enie.---------------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAC889FC1FC87B74009DBDC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Расписание МГТУ/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "oby4enie.---------------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FAC889FE1FC87B74009DBDC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Расписание МГТУTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "oby4enie.---------------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Расписание МГТУ.app/Расписание МГТУ";
+			};
+			name = Debug;
+		};
+		FAC889FF1FC87B74009DBDC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Расписание МГТУTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "oby4enie.---------------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Расписание МГТУ.app/Расписание МГТУ";
+			};
+			name = Release;
+		};
+		FAC88A011FC87B74009DBDC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Расписание МГТУUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "oby4enie.---------------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Расписание МГТУ";
+			};
+			name = Debug;
+		};
+		FAC88A021FC87B74009DBDC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Расписание МГТУUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "oby4enie.---------------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Расписание МГТУ";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAC889CB1FC87B74009DBDC1 /* Build configuration list for PBXProject "Расписание" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC889F81FC87B74009DBDC1 /* Debug */,
+				FAC889F91FC87B74009DBDC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC889FA1FC87B74009DBDC1 /* Build configuration list for PBXNativeTarget "Расписание МГТУ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC889FB1FC87B74009DBDC1 /* Debug */,
+				FAC889FC1FC87B74009DBDC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC889FD1FC87B74009DBDC1 /* Build configuration list for PBXNativeTarget "Расписание МГТУTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC889FE1FC87B74009DBDC1 /* Debug */,
+				FAC889FF1FC87B74009DBDC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC88A001FC87B74009DBDC1 /* Build configuration list for PBXNativeTarget "Расписание МГТУUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC88A011FC87B74009DBDC1 /* Debug */,
+				FAC88A021FC87B74009DBDC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FA4645621FEAA4F200FC2162 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA4645631FEAA4F200FC2162 /* Model.xcdatamodel */,
+			);
+			currentVersion = FA4645631FEAA4F200FC2162 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FAC889C81FC87B74009DBDC1 /* Project object */;
+}
