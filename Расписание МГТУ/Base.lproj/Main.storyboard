@@ -611,7 +611,7 @@
         <scene sceneID="kdn-PV-zdW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AqV-n8-pPj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Числитель" image="first" id="1M8-Fi-RgZ"/>
+                    <tabBarItem key="tabBarItem" title="Числитель" image="чс" id="1M8-Fi-RgZ"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="A9h-Di-hqt">
@@ -652,7 +652,7 @@
         <scene sceneID="Tq1-5Q-crA">
             <objects>
                 <navigationController id="v2M-uJ-H2G" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Список дел" image="second" id="GUL-td-h8h"/>
+                    <tabBarItem key="tabBarItem" title="Список дел" image="сд" id="GUL-td-h8h"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="evX-vd-PlO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -755,7 +755,7 @@
         <scene sceneID="9Jx-lB-isj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rWW-2x-aAz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Знаменатель" image="first" id="CRI-DG-F4X"/>
+                    <tabBarItem key="tabBarItem" title="Знаменатель" image="зн" id="CRI-DG-F4X"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MUS-NQ-8jN">
@@ -871,8 +871,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="зн" width="30" height="30"/>
+        <image name="сд" width="30" height="30"/>
+        <image name="чс" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="58b-Wj-V32"/>
