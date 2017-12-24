@@ -2,3 +2,4 @@
 <p align="center">
   <img src="https://github.com/Aksiniya/schedule/blob/master/images/BMSTU%20logo.png" width="200">
 </p>
+## Описание
