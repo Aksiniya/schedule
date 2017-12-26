@@ -39,4 +39,4 @@
 
 ## Используемые компоненты
 
-* hub.com/squimer/DatePickerDialog-iOS-Swift
+* https://github.com/squimer/DatePickerDialog-iOS-Swift
