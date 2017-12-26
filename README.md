@@ -39,4 +39,4 @@
 
 ## Используемые компоненты
 
-* https://github.com/squimer/DatePickerDialog-iOS-Swift
+* Выбор даты для установки первого учебного дня в семестре: https://github.com/squimer/DatePickerDialog-iOS-Swift
