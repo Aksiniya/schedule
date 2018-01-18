@@ -1,0 +1,6 @@
+framework module Pods________________ {
+  umbrella header "Pods-Расписание МГТУ-umbrella.h"
+
+  export *
+  module * { export * }
+}
