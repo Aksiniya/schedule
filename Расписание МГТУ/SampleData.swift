@@ -3,7 +3,47 @@ import CoreData
 // секции в таблицах числителя и знаменателя
 let sections = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"]
 // элементы для Picker'a в контроллере добавления предмета
-var daysForPicker = [ "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"]
+let daysForPicker = [ "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"]
+// элементы для Picker'a в контроллере загрузки расписания
+let groupsForPicker = ["ИУ8-31", "ИУ8-32", "ИУ8-33", "ИУ8-34"]
+
+//ссылки на группы в том же порядке, что и элементы для пикера групп
+let groupsURL = ["https://students.bmstu.ru/schedule/62f2fc88-a264-11e5-916b-005056960017",
+                 "https://students.bmstu.ru/schedule/62f4e1c4-a264-11e5-9e32-005056960017",
+                 "https://students.bmstu.ru/schedule/62f5611c-a264-11e5-b4d3-005056960017",
+                 "https://students.bmstu.ru/schedule/62f41f5a-a264-11e5-9d60-005056960017"]
+// "Дивы"(/div[]/) для дней недели на сайте
+let divDaysIndex = ["4", "6", "9", "11", "14", "16"]
+
+// Время начала занятий
+let timeAtArray = ["08:30", "10:15", "12:00", "13:50", "15:40", "17:25", "19:10"]
+//Время окончания занятий
+let timeToArray = ["10:05", "11:50",  "13:35", "15:25", "17:15", "19:00", "20:45"]
+
+// Это для парсинга. Сначала в функции loadShedule (AppSettings.swift) все расписание загружается в NumeratorWeek и DenominatorWeek, а затем эти два массива "разбираются" в CoreData
+var MondayNum : [String] = []
+var MondayDen : [String] = []
+var TuesdayNum : [String] = []
+var TuesdayDen : [String] = []
+var WednesdayNum : [String] = []
+var WednesdayDen : [String] = []
+var ThursdayNum : [String] = []
+var ThursdayDen : [String] = []
+var FridayNum : [String] = []
+var FridayDen : [String] = []
+var SaturdayNum : [String] = []
+var SaturdayDen : [String] = []
+
+var NumeratorWeek = [MondayNum, TuesdayNum, WednesdayNum, ThursdayNum, FridayNum, SaturdayNum]
+var DenominatorWeek = [MondayDen, TuesdayDen, WednesdayDen, ThursdayDen, FridayDen, SaturdayDen]
+
+// MARK: - очистка данных для новой загрузки
+func clearNumDenWeek(){
+    for i in 0...5 {
+        NumeratorWeek[i].removeAll()
+        DenominatorWeek[i].removeAll()
+    }
+}
 
 // структура, описывающая день для числителя и знаменателя
 struct day_{
@@ -11,7 +51,7 @@ struct day_{
     var subjects = [ [Subject](), [Subject]() ]
 }
 
-// Заполнение всех дней недели
+// Заполнение всех дней недели (это для таблиц Числитель и Знаменатель)
 var NMondaySubjects : [Subject] = [ ]
 var DMondaySubjects : [Subject] = [ ]
 var Monday = day_(dayName: "Понедельник", subjects: [NMondaySubjects, DMondaySubjects] )

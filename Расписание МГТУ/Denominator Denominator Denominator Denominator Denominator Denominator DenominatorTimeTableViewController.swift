@@ -66,7 +66,7 @@ class DenominatorTimeTableViewController: UITableViewController {
         // реализация удаления ячейки
         if editingStyle == .Delete {
             
-            var managedContext = CoreDataHelper.instance.context
+            let managedContext = CoreDataHelper.instance.context
             let fetchRequest = NSFetchRequest(entityName: "Subject")
             var error: NSError?
             

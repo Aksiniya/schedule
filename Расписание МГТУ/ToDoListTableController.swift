@@ -52,7 +52,6 @@ class ToDoListTableController: UITableViewController{
             var error: NSError?
             
             do {
-                
                 let fetchedResults = try managedContext.executeFetchRequest(fetchRequest) as? [NSManagedObject]
                 
                 let deletingObj : NSManagedObject = fetchedResults![indexPath.row]
