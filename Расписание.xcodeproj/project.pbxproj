@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2231238EFE184EC2599EC344 /* Pods________________.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A221890427A7C018537F7625 /* Pods________________.framework */; };
 		FA141CA01FEF00C000A6AF81 /* Subject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA141C9A1FEF00C000A6AF81 /* Subject+CoreDataProperties.swift */; };
 		FA141CA11FEF00C000A6AF81 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA141C9B1FEF00C000A6AF81 /* Subject.swift */; };
 		FA141CA21FEF00C000A6AF81 /* ToDo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA141C9C1FEF00C000A6AF81 /* ToDo+CoreDataProperties.swift */; };
@@ -17,6 +18,7 @@
 		FA4645641FEAA4F200FC2162 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA4645621FEAA4F200FC2162 /* Model.xcdatamodeld */; };
 		FA4645721FEAAC7800FC2162 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4645711FEAAC7800FC2162 /* CoreDataHelper.swift */; };
 		FA75D50A1FE788C0006D5ECA /* SubjectInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA75D5091FE788C0006D5ECA /* SubjectInfoView.swift */; };
+		FAB0CB10200FABFB005CC4FB /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0CB0F200FABFB005CC4FB /* AppSettings.swift */; };
 		FAC889D41FC87B74009DBDC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC889D31FC87B74009DBDC1 /* AppDelegate.swift */; };
 		FAC889DB1FC87B74009DBDC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC889D91FC87B74009DBDC1 /* Main.storyboard */; };
 		FAC889DD1FC87B74009DBDC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC889DC1FC87B74009DBDC1 /* Assets.xcassets */; };
@@ -50,6 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4AE0F5F3FCA650C53E0A32E0 /* Pods-Расписание МГТУ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Расписание МГТУ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Расписание МГТУ/Pods-Расписание МГТУ.debug.xcconfig"; sourceTree = "<group>"; };
+		A221890427A7C018537F7625 /* Pods________________.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods________________.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD8EE80AE46D5308B7ADFD28 /* Pods-Расписание МГТУ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Расписание МГТУ.release.xcconfig"; path = "Pods/Target Support Files/Pods-Расписание МГТУ/Pods-Расписание МГТУ.release.xcconfig"; sourceTree = "<group>"; };
 		FA141C9A1FEF00C000A6AF81 /* Subject+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Subject+CoreDataProperties.swift"; path = "CoreData files/Subject+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FA141C9B1FEF00C000A6AF81 /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Subject.swift; path = "CoreData files/Subject.swift"; sourceTree = "<group>"; };
 		FA141C9C1FEF00C000A6AF81 /* ToDo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ToDo+CoreDataProperties.swift"; path = "CoreData files/ToDo+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -60,6 +65,7 @@
 		FA4645631FEAA4F200FC2162 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		FA4645711FEAAC7800FC2162 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		FA75D5091FE788C0006D5ECA /* SubjectInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectInfoView.swift; sourceTree = "<group>"; };
+		FAB0CB0F200FABFB005CC4FB /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		FAC889D01FC87B74009DBDC1 /* Расписание МГТУ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Расписание МГТУ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC889D31FC87B74009DBDC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC889DA1FC87B74009DBDC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -67,10 +73,10 @@
 		FAC889DF1FC87B74009DBDC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAC889E11FC87B74009DBDC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC889E61FC87B74009DBDC1 /* Расписание МГТУTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Расписание МГТУTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAC889EA1FC87B74009DBDC1 /* _______________Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_______________Tests.swift"; sourceTree = "<group>"; };
+		FAC889EA1FC87B74009DBDC1 /* _______________Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _______________Tests.swift; sourceTree = "<group>"; };
 		FAC889EC1FC87B74009DBDC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC889F11FC87B74009DBDC1 /* Расписание МГТУUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Расписание МГТУUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAC889F51FC87B74009DBDC1 /* _______________UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_______________UITests.swift"; sourceTree = "<group>"; };
+		FAC889F51FC87B74009DBDC1 /* _______________UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _______________UITests.swift; sourceTree = "<group>"; };
 		FAC889F71FC87B74009DBDC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC88A051FC88BD7009DBDC1 /* NumeratorTimeTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumeratorTimeTableController.swift; sourceTree = "<group>"; };
 		FAC88A071FC88C0D009DBDC1 /* Denominator Denominator Denominator Denominator Denominator Denominator DenominatorTimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Denominator Denominator Denominator Denominator Denominator Denominator DenominatorTimeTableViewController.swift"; sourceTree = "<group>"; };
@@ -86,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2231238EFE184EC2599EC344 /* Pods________________.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +113,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E3B337AFC500FD0A90038E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A221890427A7C018537F7625 /* Pods________________.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8A0987E9D9CA70084470164 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4AE0F5F3FCA650C53E0A32E0 /* Pods-Расписание МГТУ.debug.xcconfig */,
+				CD8EE80AE46D5308B7ADFD28 /* Pods-Расписание МГТУ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FAC889C71FC87B74009DBDC1 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +143,8 @@
 				FAC889E91FC87B74009DBDC1 /* Расписание МГТУTests */,
 				FAC889F41FC87B74009DBDC1 /* Расписание МГТУUITests */,
 				FAC889D11FC87B74009DBDC1 /* Products */,
+				E8A0987E9D9CA70084470164 /* Pods */,
+				6E3B337AFC500FD0A90038E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,6 +177,7 @@
 				FAC889E11FC87B74009DBDC1 /* Info.plist */,
 				FA155BF81FDEA42C00A5D1CC /* ToDoListTableController.swift */,
 				FAFA4A101FED6CC000BB5232 /* DatePickerDialog.swift */,
+				FAB0CB0F200FABFB005CC4FB /* AppSettings.swift */,
 			);
 			path = "Расписание МГТУ";
 			sourceTree = "<group>";
@@ -180,9 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAC889FA1FC87B74009DBDC1 /* Build configuration list for PBXNativeTarget "Расписание МГТУ" */;
 			buildPhases = (
+				64382AF5BACDABCBAD2DDA28 /* [CP] Check Pods Manifest.lock */,
 				FAC889CC1FC87B74009DBDC1 /* Sources */,
 				FAC889CD1FC87B74009DBDC1 /* Frameworks */,
 				FAC889CE1FC87B74009DBDC1 /* Resources */,
+				C52ED180DD627A91FEE3D36E /* [CP] Embed Pods Frameworks */,
+				F912FED06D7EAF033CDBE647 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -299,12 +329,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		64382AF5BACDABCBAD2DDA28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Расписание МГТУ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C52ED180DD627A91FEE3D36E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Расписание МГТУ/Pods-Расписание МГТУ-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kanna.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Расписание МГТУ/Pods-Расписание МГТУ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F912FED06D7EAF033CDBE647 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Расписание МГТУ/Pods-Расписание МГТУ-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FAC889CC1FC87B74009DBDC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FAC88A121FCB6CD7009DBDC1 /* SubjectTableCell.swift in Sources */,
+				FAB0CB10200FABFB005CC4FB /* AppSettings.swift in Sources */,
 				FAC88A0C1FC8B5F0009DBDC1 /* AddDenominatorViewController.swift in Sources */,
 				FA141CA11FEF00C000A6AF81 /* Subject.swift in Sources */,
 				FA141CA21FEF00C000A6AF81 /* ToDo+CoreDataProperties.swift in Sources */,
@@ -463,6 +548,7 @@
 		};
 		FAC889FB1FC87B74009DBDC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AE0F5F3FCA650C53E0A32E0 /* Pods-Расписание МГТУ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -475,6 +561,7 @@
 		};
 		FAC889FC1FC87B74009DBDC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD8EE80AE46D5308B7ADFD28 /* Pods-Расписание МГТУ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
