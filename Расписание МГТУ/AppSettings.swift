@@ -4,13 +4,26 @@ import Kanna
 
 class AppSettings: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource
 {
-  
+    
+    var firstDayOfEducationFromDataSource : NSDate? = nil
+
+    @IBOutlet weak var firstDayOfEducationLabel: UILabel!
     @IBOutlet weak var groupLabel: UILabel!
     @IBOutlet weak var groupPicker: UIPickerView!
     
+    @IBAction func SetFirstDayOfEducation(sender: AnyObject) {
+        DatePickerDialog().show("Первый день учебы в семестре", doneButtonTitle: "Сохранить", cancelButtonTitle: "Отмена", datePickerMode: .Date){
+            (date) -> Void in
+            
+            self.updateWeekSettings(date)
+            self.loadFirstDayOfEducationFromDataSource()
+            self.loadFirstDayOfEducationLabel()
+        }
+    }
+    
     @IBAction func loadButton(sender: AnyObject) {
         
-        ClearFunc()
+//        ClearFunc()
         
         var i = 0
         var URLAdress : String?
@@ -28,6 +41,37 @@ class AppSettings: UITableViewController, UIPickerViewDelegate, UIPickerViewData
         else{
             loadSheduleErrorAlert()
         }
+    }
+
+    func updateWeekSettings(date : NSDate){
+        let managedContext = CoreDataHelper.instance.context
+        let fetchRequest = NSFetchRequest(entityName:"Settings")
+        var error: NSError?
+        
+        do {
+            let fetchedResults = try managedContext.executeFetchRequest(fetchRequest) as? [NSManagedObject]
+            if let todoItems = fetchedResults{
+                if let newSettings = todoItems.first as! Settings? {
+                    newSettings.firstDayOfEducation = date
+                    CoreDataHelper.instance.save()
+                }
+                else{
+                    let newSettings = Settings()
+                    newSettings.firstDayOfEducation = date
+                    CoreDataHelper.instance.save()
+                }
+                
+            } else {
+                print("Could not fetch \(error), \(error!.userInfo)")
+            }
+        } catch {
+            print(error)
+        }
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        loadFirstDayOfEducationFromDataSource()
+        loadFirstDayOfEducationLabel()
     }
     
     func loadShedule( URLAdress: String ){
@@ -65,7 +109,10 @@ class AppSettings: UITableViewController, UIPickerViewDelegate, UIPickerViewData
                                     }
                                 }
                                 else{
-                                    DenominatorWeek[DayDivIntIndex].append(NumeratorWeek[DayDivIntIndex].last!)
+                                    // защита от пустого обращения (если нет соединения с сервером, то массив numerator не заполнится)
+                                    if NumeratorWeek[DayDivIntIndex].last != nil {
+                                        DenominatorWeek[DayDivIntIndex].append(NumeratorWeek[DayDivIntIndex].last!)
+                                    }
                                 }
                             }
                         }
@@ -73,9 +120,20 @@ class AppSettings: UITableViewController, UIPickerViewDelegate, UIPickerViewData
                     DayDivIntIndex += 1
                 }
                 
+                for day in 0...5 {
+                    guard NumeratorWeek[day].isEmpty == false &&
+                          DenominatorWeek[day].isEmpty == false
+                            else { self.loadSheduleErrorAlert(); return }
+                }
+
+                self.ClearFunc()
+                
                 var subjFromArray : String
                 for day in 0...5 {
                     for i in 0...6 {
+                        
+                        // если нет соединения, то NumeratorWeek (а значит и DenominatorWeek)будет пустым
+                        guard NumeratorWeek[day].isEmpty != true else { self.loadSheduleErrorAlert(); break }
                         
                         let NumSubject = Subject()
                         subjFromArray = NumeratorWeek[day][i]
@@ -101,6 +159,9 @@ class AppSettings: UITableViewController, UIPickerViewDelegate, UIPickerViewData
                     }
                 }
                 self.loadSheduleSuccessAlert()
+            }
+            else {
+            self.loadSheduleErrorAlert()
             }
         }
         URLTask.resume()
@@ -169,19 +230,24 @@ class AppSettings: UITableViewController, UIPickerViewDelegate, UIPickerViewData
     }
     
     func loadSheduleErrorAlert(){
-        let alert = UIAlertController(title: "Ошибка загрузки расписания",
-                                      message: "Не удалось загрузить расписание",
-                                      preferredStyle: .Alert)
         
-        let okAction = UIAlertAction(title: "Ок",
-                                     style: .Default) { (action: UIAlertAction!) -> Void in
+        dispatch_async(dispatch_get_main_queue()){
+            let errorLoad = UIAlertController(title: "Ошибка загрузки расписания",
+                                          message: "Не удалось загрузить расписание",
+                                          preferredStyle: .Alert)
+            
+            let okAction = UIAlertAction(title: "Ок",
+                                         style: .Default) { (action: UIAlertAction!) -> Void in
+            }
+            
+            errorLoad.addAction(okAction)
+            self.presentViewController(errorLoad, animated: true, completion: nil)
         }
-        
-        alert.addAction(okAction)
-        presentViewController(alert, animated: true, completion: nil)
     }
     
     func loadSheduleSuccessAlert(){
+        
+    dispatch_async(dispatch_get_main_queue()){
         let goodLoad = UIAlertController(title: "Процесс завершен",
                                          message: "Расписание было успешно загружено",
                                          preferredStyle: .Alert)
@@ -191,6 +257,37 @@ class AppSettings: UITableViewController, UIPickerViewDelegate, UIPickerViewData
         }
         
         goodLoad.addAction(okAction)
-        presentViewController(goodLoad, animated: true, completion: nil)
+        self.presentViewController(goodLoad, animated: true, completion: nil)
+            }
+    }
+    
+    func loadFirstDayOfEducationFromDataSource() {
+        let managedContext = CoreDataHelper.instance.context
+        let fetchRequest = NSFetchRequest(entityName:"Settings")
+        var error: NSError?
+        do {
+            let fetchedResults = try managedContext.executeFetchRequest(fetchRequest) as? [NSManagedObject]
+            if let todoItems = fetchedResults{
+                if let firstSet = todoItems.first as! Settings? {
+                    firstDayOfEducationFromDataSource = firstSet.firstDayOfEducation!
+                }
+            } else {
+                print("Could not fetch \(error), \(error!.userInfo)")
+            }
+        } catch {
+            print(error)
+        }
+    }
+    
+    func loadFirstDayOfEducationLabel() {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yy"
+        if firstDayOfEducationFromDataSource == nil{
+            let currentDay = NSDate.init()
+            firstDayOfEducationLabel.text = dateFormatter.stringFromDate(currentDay)
+        }
+        else{
+            firstDayOfEducationLabel.text = dateFormatter.stringFromDate(firstDayOfEducationFromDataSource!)
+        }
     }
 }

@@ -9,7 +9,7 @@ class ToDoListTableController: UITableViewController{
     @IBOutlet weak var BackgroundView: UIView!
     
     var items : [ ToDo ] = []
-    var firstDayOfEducationFromDataSource : NSDate? = nil
+//    var firstDayOfEducationFromDataSource : NSDate? = nil
     var currentWeek : Int = 0
     
     override func viewDidLoad() {
