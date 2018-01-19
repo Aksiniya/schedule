@@ -37,8 +37,20 @@ class SubjectInfoView: UITableViewController {
     //    }
     
     override func viewWillDisappear(animated: Bool) {
-        subject.subjectName = subjectTextField.text!
-        subject.specification = descTextView.text!
+        
+        if subjectTextField.text >= "" {
+            subject.subjectName = subjectTextField.text!
+        }
+        else {
+            subject.subjectName = ""
+        }
+        
+        if descTextView.text >= "" {
+            subject.specification = descTextView.text!
+        }
+        else {
+            subject.specification = ""
+        }
         CoreDataHelper.instance.save()
     }
 }

@@ -26,7 +26,7 @@
 		FAC889EB1FC87B74009DBDC1 /* _______________Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC889EA1FC87B74009DBDC1 /* _______________Tests.swift */; };
 		FAC889F61FC87B74009DBDC1 /* _______________UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC889F51FC87B74009DBDC1 /* _______________UITests.swift */; };
 		FAC88A061FC88BD7009DBDC1 /* NumeratorTimeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC88A051FC88BD7009DBDC1 /* NumeratorTimeTableController.swift */; };
-		FAC88A081FC88C0D009DBDC1 /* Denominator Denominator Denominator Denominator Denominator Denominator DenominatorTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC88A071FC88C0D009DBDC1 /* Denominator Denominator Denominator Denominator Denominator Denominator DenominatorTimeTableViewController.swift */; };
+		FAC88A081FC88C0D009DBDC1 /* DenominatorTimeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC88A071FC88C0D009DBDC1 /* DenominatorTimeTableController.swift */; };
 		FAC88A0A1FC8B5D6009DBDC1 /* AddNumeratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC88A091FC8B5D6009DBDC1 /* AddNumeratorViewController.swift */; };
 		FAC88A0C1FC8B5F0009DBDC1 /* AddDenominatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC88A0B1FC8B5F0009DBDC1 /* AddDenominatorViewController.swift */; };
 		FAC88A101FCB627D009DBDC1 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC88A0F1FCB627D009DBDC1 /* SampleData.swift */; };
@@ -79,7 +79,7 @@
 		FAC889F51FC87B74009DBDC1 /* _______________UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_______________UITests.swift"; sourceTree = "<group>"; };
 		FAC889F71FC87B74009DBDC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC88A051FC88BD7009DBDC1 /* NumeratorTimeTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumeratorTimeTableController.swift; sourceTree = "<group>"; };
-		FAC88A071FC88C0D009DBDC1 /* Denominator Denominator Denominator Denominator Denominator Denominator DenominatorTimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Denominator Denominator Denominator Denominator Denominator Denominator DenominatorTimeTableViewController.swift"; sourceTree = "<group>"; };
+		FAC88A071FC88C0D009DBDC1 /* DenominatorTimeTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DenominatorTimeTableController.swift; sourceTree = "<group>"; };
 		FAC88A091FC8B5D6009DBDC1 /* AddNumeratorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNumeratorViewController.swift; sourceTree = "<group>"; };
 		FAC88A0B1FC8B5F0009DBDC1 /* AddDenominatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDenominatorViewController.swift; sourceTree = "<group>"; };
 		FAC88A0F1FCB627D009DBDC1 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
@@ -167,7 +167,7 @@
 				FAC889D91FC87B74009DBDC1 /* Main.storyboard */,
 				FA75D5091FE788C0006D5ECA /* SubjectInfoView.swift */,
 				FAC88A051FC88BD7009DBDC1 /* NumeratorTimeTableController.swift */,
-				FAC88A071FC88C0D009DBDC1 /* Denominator Denominator Denominator Denominator Denominator Denominator DenominatorTimeTableViewController.swift */,
+				FAC88A071FC88C0D009DBDC1 /* DenominatorTimeTableController.swift */,
 				FAC88A0F1FCB627D009DBDC1 /* SampleData.swift */,
 				FAC88A111FCB6CD7009DBDC1 /* SubjectTableCell.swift */,
 				FAC88A091FC8B5D6009DBDC1 /* AddNumeratorViewController.swift */,
@@ -400,7 +400,7 @@
 				FAFA4A111FED6CC000BB5232 /* DatePickerDialog.swift in Sources */,
 				FA97A21F2012727B0064CC53 /* Settings+CoreDataProperties.swift in Sources */,
 				FA97A2202012727B0064CC53 /* Settings.swift in Sources */,
-				FAC88A081FC88C0D009DBDC1 /* Denominator Denominator Denominator Denominator Denominator Denominator DenominatorTimeTableViewController.swift in Sources */,
+				FAC88A081FC88C0D009DBDC1 /* DenominatorTimeTableController.swift in Sources */,
 				FA4645721FEAAC7800FC2162 /* CoreDataHelper.swift in Sources */,
 				FA97A2212012727B0064CC53 /* Subject+CoreDataProperties.swift in Sources */,
 				FA75D50A1FE788C0006D5ECA /* SubjectInfoView.swift in Sources */,
