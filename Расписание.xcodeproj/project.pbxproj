@@ -271,6 +271,7 @@
 				TargetAttributes = {
 					FAC889CF1FC87B74009DBDC1 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 3WS633S2WV;
 					};
 					FAC889E51FC87B74009DBDC1 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -552,10 +553,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Расписание МГТУ/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "oby4enie.---------------";
+				PRODUCT_BUNDLE_IDENTIFIER = Aksira.Shedule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -565,10 +568,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Расписание МГТУ/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "oby4enie.---------------";
+				PRODUCT_BUNDLE_IDENTIFIER = Aksira.Shedule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
