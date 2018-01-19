@@ -12,11 +12,12 @@
         <attribute name="week" attributeType="Boolean" syncable="YES"/>
     </entity>
     <entity name="ToDo" representedClassName=".ToDo" syncable="YES">
+        <attribute name="checkMark" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
         <element name="Settings" positionX="-234" positionY="27" width="128" height="60"/>
         <element name="Subject" positionX="-81" positionY="-54" width="164" height="133"/>
-        <element name="ToDo" positionX="-234" positionY="-54" width="128" height="60"/>
+        <element name="ToDo" positionX="-234" positionY="-54" width="128" height="75"/>
     </elements>
 </model>

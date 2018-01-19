@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		2231238EFE184EC2599EC344 /* Pods________________.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A221890427A7C018537F7625 /* Pods________________.framework */; };
-		FA141CA01FEF00C000A6AF81 /* Subject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA141C9A1FEF00C000A6AF81 /* Subject+CoreDataProperties.swift */; };
-		FA141CA11FEF00C000A6AF81 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA141C9B1FEF00C000A6AF81 /* Subject.swift */; };
-		FA141CA21FEF00C000A6AF81 /* ToDo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA141C9C1FEF00C000A6AF81 /* ToDo+CoreDataProperties.swift */; };
-		FA141CA31FEF00C000A6AF81 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA141C9D1FEF00C000A6AF81 /* ToDo.swift */; };
-		FA141CA41FEF00C000A6AF81 /* Settings+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA141C9E1FEF00C000A6AF81 /* Settings+CoreDataProperties.swift */; };
-		FA141CA51FEF00C000A6AF81 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA141C9F1FEF00C000A6AF81 /* Settings.swift */; };
 		FA155BF91FDEA42C00A5D1CC /* ToDoListTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA155BF81FDEA42C00A5D1CC /* ToDoListTableController.swift */; };
 		FA4645641FEAA4F200FC2162 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA4645621FEAA4F200FC2162 /* Model.xcdatamodeld */; };
 		FA4645721FEAAC7800FC2162 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4645711FEAAC7800FC2162 /* CoreDataHelper.swift */; };
 		FA75D50A1FE788C0006D5ECA /* SubjectInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA75D5091FE788C0006D5ECA /* SubjectInfoView.swift */; };
+		FA97A21F2012727B0064CC53 /* Settings+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97A2192012727B0064CC53 /* Settings+CoreDataProperties.swift */; };
+		FA97A2202012727B0064CC53 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97A21A2012727B0064CC53 /* Settings.swift */; };
+		FA97A2212012727B0064CC53 /* Subject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97A21B2012727B0064CC53 /* Subject+CoreDataProperties.swift */; };
+		FA97A2222012727B0064CC53 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97A21C2012727B0064CC53 /* Subject.swift */; };
+		FA97A2232012727B0064CC53 /* ToDo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97A21D2012727B0064CC53 /* ToDo+CoreDataProperties.swift */; };
+		FA97A2242012727B0064CC53 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97A21E2012727B0064CC53 /* ToDo.swift */; };
 		FAB0CB10200FABFB005CC4FB /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0CB0F200FABFB005CC4FB /* AppSettings.swift */; };
 		FAC889D41FC87B74009DBDC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC889D31FC87B74009DBDC1 /* AppDelegate.swift */; };
 		FAC889DB1FC87B74009DBDC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC889D91FC87B74009DBDC1 /* Main.storyboard */; };
@@ -53,18 +53,18 @@
 
 /* Begin PBXFileReference section */
 		4AE0F5F3FCA650C53E0A32E0 /* Pods-Расписание МГТУ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Расписание МГТУ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Расписание МГТУ/Pods-Расписание МГТУ.debug.xcconfig"; sourceTree = "<group>"; };
-		A221890427A7C018537F7625 /* Pods________________.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods________________.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A221890427A7C018537F7625 /* Pods________________.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods________________.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8EE80AE46D5308B7ADFD28 /* Pods-Расписание МГТУ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Расписание МГТУ.release.xcconfig"; path = "Pods/Target Support Files/Pods-Расписание МГТУ/Pods-Расписание МГТУ.release.xcconfig"; sourceTree = "<group>"; };
-		FA141C9A1FEF00C000A6AF81 /* Subject+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Subject+CoreDataProperties.swift"; path = "CoreData files/Subject+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		FA141C9B1FEF00C000A6AF81 /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Subject.swift; path = "CoreData files/Subject.swift"; sourceTree = "<group>"; };
-		FA141C9C1FEF00C000A6AF81 /* ToDo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ToDo+CoreDataProperties.swift"; path = "CoreData files/ToDo+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		FA141C9D1FEF00C000A6AF81 /* ToDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDo.swift; path = "CoreData files/ToDo.swift"; sourceTree = "<group>"; };
-		FA141C9E1FEF00C000A6AF81 /* Settings+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Settings+CoreDataProperties.swift"; path = "CoreData files/Settings+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		FA141C9F1FEF00C000A6AF81 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Settings.swift; path = "CoreData files/Settings.swift"; sourceTree = "<group>"; };
 		FA155BF81FDEA42C00A5D1CC /* ToDoListTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListTableController.swift; sourceTree = "<group>"; };
 		FA4645631FEAA4F200FC2162 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		FA4645711FEAAC7800FC2162 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		FA75D5091FE788C0006D5ECA /* SubjectInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectInfoView.swift; sourceTree = "<group>"; };
+		FA97A2192012727B0064CC53 /* Settings+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Settings+CoreDataProperties.swift"; path = "CoreData files/Settings+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FA97A21A2012727B0064CC53 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Settings.swift; path = "CoreData files/Settings.swift"; sourceTree = "<group>"; };
+		FA97A21B2012727B0064CC53 /* Subject+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Subject+CoreDataProperties.swift"; path = "CoreData files/Subject+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FA97A21C2012727B0064CC53 /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Subject.swift; path = "CoreData files/Subject.swift"; sourceTree = "<group>"; };
+		FA97A21D2012727B0064CC53 /* ToDo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ToDo+CoreDataProperties.swift"; path = "CoreData files/ToDo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FA97A21E2012727B0064CC53 /* ToDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDo.swift; path = "CoreData files/ToDo.swift"; sourceTree = "<group>"; };
 		FAB0CB0F200FABFB005CC4FB /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		FAC889D01FC87B74009DBDC1 /* Расписание МГТУ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Расписание МГТУ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC889D31FC87B74009DBDC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,10 +73,10 @@
 		FAC889DF1FC87B74009DBDC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAC889E11FC87B74009DBDC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC889E61FC87B74009DBDC1 /* Расписание МГТУTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Расписание МГТУTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAC889EA1FC87B74009DBDC1 /* _______________Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _______________Tests.swift; sourceTree = "<group>"; };
+		FAC889EA1FC87B74009DBDC1 /* _______________Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_______________Tests.swift"; sourceTree = "<group>"; };
 		FAC889EC1FC87B74009DBDC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC889F11FC87B74009DBDC1 /* Расписание МГТУUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Расписание МГТУUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAC889F51FC87B74009DBDC1 /* _______________UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _______________UITests.swift; sourceTree = "<group>"; };
+		FAC889F51FC87B74009DBDC1 /* _______________UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_______________UITests.swift"; sourceTree = "<group>"; };
 		FAC889F71FC87B74009DBDC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC88A051FC88BD7009DBDC1 /* NumeratorTimeTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumeratorTimeTableController.swift; sourceTree = "<group>"; };
 		FAC88A071FC88C0D009DBDC1 /* Denominator Denominator Denominator Denominator Denominator Denominator DenominatorTimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Denominator Denominator Denominator Denominator Denominator Denominator DenominatorTimeTableViewController.swift"; sourceTree = "<group>"; };
@@ -133,12 +133,12 @@
 		FAC889C71FC87B74009DBDC1 = {
 			isa = PBXGroup;
 			children = (
-				FA141C9A1FEF00C000A6AF81 /* Subject+CoreDataProperties.swift */,
-				FA141C9B1FEF00C000A6AF81 /* Subject.swift */,
-				FA141C9C1FEF00C000A6AF81 /* ToDo+CoreDataProperties.swift */,
-				FA141C9D1FEF00C000A6AF81 /* ToDo.swift */,
-				FA141C9E1FEF00C000A6AF81 /* Settings+CoreDataProperties.swift */,
-				FA141C9F1FEF00C000A6AF81 /* Settings.swift */,
+				FA97A2192012727B0064CC53 /* Settings+CoreDataProperties.swift */,
+				FA97A21A2012727B0064CC53 /* Settings.swift */,
+				FA97A21B2012727B0064CC53 /* Subject+CoreDataProperties.swift */,
+				FA97A21C2012727B0064CC53 /* Subject.swift */,
+				FA97A21D2012727B0064CC53 /* ToDo+CoreDataProperties.swift */,
+				FA97A21E2012727B0064CC53 /* ToDo.swift */,
 				FAC889D21FC87B74009DBDC1 /* Расписание МГТУ */,
 				FAC889E91FC87B74009DBDC1 /* Расписание МГТУTests */,
 				FAC889F41FC87B74009DBDC1 /* Расписание МГТУUITests */,
@@ -391,22 +391,22 @@
 				FAC88A121FCB6CD7009DBDC1 /* SubjectTableCell.swift in Sources */,
 				FAB0CB10200FABFB005CC4FB /* AppSettings.swift in Sources */,
 				FAC88A0C1FC8B5F0009DBDC1 /* AddDenominatorViewController.swift in Sources */,
-				FA141CA11FEF00C000A6AF81 /* Subject.swift in Sources */,
-				FA141CA21FEF00C000A6AF81 /* ToDo+CoreDataProperties.swift in Sources */,
+				FA97A2242012727B0064CC53 /* ToDo.swift in Sources */,
 				FAC88A0A1FC8B5D6009DBDC1 /* AddNumeratorViewController.swift in Sources */,
 				FA155BF91FDEA42C00A5D1CC /* ToDoListTableController.swift in Sources */,
-				FA141CA51FEF00C000A6AF81 /* Settings.swift in Sources */,
 				FAC88A061FC88BD7009DBDC1 /* NumeratorTimeTableController.swift in Sources */,
 				FAC889D41FC87B74009DBDC1 /* AppDelegate.swift in Sources */,
 				FAFA4A111FED6CC000BB5232 /* DatePickerDialog.swift in Sources */,
+				FA97A21F2012727B0064CC53 /* Settings+CoreDataProperties.swift in Sources */,
+				FA97A2202012727B0064CC53 /* Settings.swift in Sources */,
 				FAC88A081FC88C0D009DBDC1 /* Denominator Denominator Denominator Denominator Denominator Denominator DenominatorTimeTableViewController.swift in Sources */,
 				FA4645721FEAAC7800FC2162 /* CoreDataHelper.swift in Sources */,
-				FA141CA31FEF00C000A6AF81 /* ToDo.swift in Sources */,
+				FA97A2212012727B0064CC53 /* Subject+CoreDataProperties.swift in Sources */,
 				FA75D50A1FE788C0006D5ECA /* SubjectInfoView.swift in Sources */,
 				FAC88A101FCB627D009DBDC1 /* SampleData.swift in Sources */,
+				FA97A2232012727B0064CC53 /* ToDo+CoreDataProperties.swift in Sources */,
+				FA97A2222012727B0064CC53 /* Subject.swift in Sources */,
 				FA4645641FEAA4F200FC2162 /* Model.xcdatamodeld in Sources */,
-				FA141CA41FEF00C000A6AF81 /* Settings+CoreDataProperties.swift in Sources */,
-				FA141CA01FEF00C000A6AF81 /* Subject+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

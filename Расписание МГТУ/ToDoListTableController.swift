@@ -27,6 +27,7 @@ class ToDoListTableController: UITableViewController{
     override func viewWillAppear(animated: Bool) {
         loadCurrentWeek()
         updateItemsArray()
+        
         weekLabel.text = "\(currentWeek)"
     }
     
@@ -39,6 +40,12 @@ class ToDoListTableController: UITableViewController{
         let cell = tableItems.dequeueReusableCellWithIdentifier("ToDoCell")!
         cell.textLabel!.text = items[indexPath.row].name
         
+        if checkMarkAtIndex(indexPath.row) {
+            cell.accessoryType = .Checkmark
+        }
+        else {
+            cell.accessoryType = .None
+        }
         return cell
     }
     
@@ -74,9 +81,13 @@ class ToDoListTableController: UITableViewController{
         let cell = tableView.cellForRowAtIndexPath(indexPath)
         
         if cell!.accessoryType == .None {
-            cell!.accessoryType = .Checkmark
+            
+            updateCheckMark(true, index: indexPath.row)
+                tableView.reloadData()
         } else {
-            cell!.accessoryType = .None
+            updateCheckMark(false, index: indexPath.row)
+            tableView.reloadData()
+//            cell!.accessoryType = .None
         }
     }
     
@@ -216,5 +227,58 @@ class ToDoListTableController: UITableViewController{
             self.loadCurrentWeek()
             self.weekLabel.text = "\(self.currentWeek)"
         }
+    }
+    
+    func updateCheckMark(checkMarkBool: Bool, index: Int){
+        
+        let managedContext = CoreDataHelper.instance.context
+        let fetchRequest = NSFetchRequest(entityName: "ToDo")
+        var error: NSError?
+        
+        do {
+            let toDoNameAtIndex = items[index].name
+            let namePredicate = NSPredicate(format: "name == %@", toDoNameAtIndex!)
+            
+            fetchRequest.predicate = namePredicate
+            
+            if let fetchedResults = try managedContext.executeFetchRequest(fetchRequest) as? [NSManagedObject]
+            // при условии существования двух и более ToDo с одинаковыми именами, будет помечаться только один из них, в силу того, что они одинаковые - не важно какой именно 
+            {
+                for todo in fetchedResults{
+                    let checkMarkObj = todo as! ToDo
+                    checkMarkObj.checkMark = checkMarkBool
+        // =============? ===============
+//                    CoreDataHelper.instance.save()
+                }
+            }
+        }
+        catch{
+            print(error)
+        }
+    }
+    
+    func checkMarkAtIndex(index: Int) -> Bool {
+       
+        var returnValue = false
+        
+        let managedContext = CoreDataHelper.instance.context
+        let fetchRequest = NSFetchRequest(entityName: "ToDo")
+        var error: NSError?
+        
+        do {
+            let toDoNameAtIndex = items[index].name
+            let namePredicate = NSPredicate(format: "name == %@", toDoNameAtIndex!)
+            fetchRequest.predicate = namePredicate
+            
+            if let fetchedResults = try managedContext.executeFetchRequest(fetchRequest) as? [NSManagedObject]
+            {
+                let checkMarkObj = (fetchedResults.first)! as! ToDo
+                returnValue = checkMarkObj.checkMark! as Bool
+            }
+        }
+        catch{
+            print(error)
+        }
+        return returnValue
     }
 }
