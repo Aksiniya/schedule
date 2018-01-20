@@ -14,11 +14,16 @@ class AddNumeratorViewController: UITableViewController, UIPickerViewDelegate, U
         
         super.viewDidLoad()
         
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
+        
         let DayPicker = UIPickerView()
         DayPicker.delegate = self
         dayTextField.inputView = DayPicker
-        
-        //        subjectTextField.delegate = self
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     override func didReceiveMemoryWarning() {

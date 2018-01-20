@@ -42,7 +42,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Описание" id="uvM-rB-4IK">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="300" id="zPS-uo-eSF">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="300" id="zPS-uo-eSF">
                                         <rect key="frame" x="0.0" y="209" width="375" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zPS-uo-eSF" id="6sq-7Q-9Kk">
@@ -341,6 +341,7 @@
 Аудитория:</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                                                 </textView>
                                             </subviews>
                                             <constraints>
@@ -518,6 +519,7 @@
 Аудитория:</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                                                 </textView>
                                             </subviews>
                                             <constraints>
@@ -834,7 +836,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2EB-Zi-KUd">
-                                                    <rect key="frame" x="8" y="7" width="359" height="30"/>
+                                                    <rect key="frame" x="8" y="0.0" width="359" height="43"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <state key="normal" title="Загрузить"/>
                                                     <connections>
@@ -843,9 +845,9 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="2EB-Zi-KUd" firstAttribute="top" secondItem="mog-WW-Agh" secondAttribute="topMargin" constant="-1" id="4tK-IS-ydZ"/>
+                                                <constraint firstItem="2EB-Zi-KUd" firstAttribute="top" secondItem="mog-WW-Agh" secondAttribute="topMargin" constant="-8" id="4tK-IS-ydZ"/>
                                                 <constraint firstItem="2EB-Zi-KUd" firstAttribute="trailing" secondItem="mog-WW-Agh" secondAttribute="trailingMargin" id="Ram-Xr-8jS"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="2EB-Zi-KUd" secondAttribute="bottom" constant="-2" id="UNd-Rg-Lmf"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="2EB-Zi-KUd" secondAttribute="bottom" constant="-8" id="UNd-Rg-Lmf"/>
                                                 <constraint firstItem="2EB-Zi-KUd" firstAttribute="leading" secondItem="mog-WW-Agh" secondAttribute="leadingMargin" id="fUx-pO-lfI"/>
                                             </constraints>
                                         </tableViewCellContentView>

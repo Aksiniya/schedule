@@ -17,7 +17,15 @@ class SubjectInfoView: UITableViewController {
     }
     
     override func viewDidLoad() {
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
+        
         super.viewDidLoad()
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     override func viewWillDisappear(animated: Bool) {
